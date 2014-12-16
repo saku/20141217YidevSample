@@ -1,0 +1,15 @@
+{
+  "name": "gulp-set",
+  "version": "1.0.0",
+  "description": "2014/12/20 yidev sample",
+  "author": "saku",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "3.8.10",
+    "gulp-handlebars": "3.0.1",
+    "gulp-define-module": "0.1.1",
+    "gulp-concat": "2.4.2",
+    "gulp-declare": "0.3.0",
+    "gulp-plumber": "0.6.6"
+  }
+}
