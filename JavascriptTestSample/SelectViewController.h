@@ -1,6 +1,4 @@
 //
-//  SelectViewController.h
-//
 //  Copyright (c) 2014 Yoichiro Sakurai. All rights reserved.
 //
 

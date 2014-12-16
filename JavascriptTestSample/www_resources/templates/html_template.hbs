@@ -1,0 +1,17 @@
+{{#ifCond type '==' 0}}
+<ul>
+    {{#each contents}}
+    <li>{{.}}</li>
+    {{/each}}
+</ul>
+{{else}} {{#ifCond type '==' 1}}
+<ol>
+    {{#each contents}}
+    <li>{{.}}</li>
+    {{/each}}
+</ol>
+{{else}}
+{{#each contents}}
+{{.}}<br>
+{{/each}}
+{{/ifCond}}{{/ifCond}}

@@ -1,6 +1,4 @@
 //
-//  SelectViewController.h
-//
 //  Copyright (c) 2014 Yoichiro Sakurai. All rights reserved.
 //
 
@@ -62,12 +60,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *className = [NSString stringWithFormat:@"%@ViewController", _samples[indexPath.row]];
-    UIViewController *viewController = [[NSClassFromString(className) alloc] init];
-    viewController.title = _samples[indexPath.row];
-
-    [self.navigationController pushViewController:viewController animated:YES];
+    @try {
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:className];
+        viewController.title = _samples[indexPath.row];
+        
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    @catch (NSException *exception) {
+        // if class not exist in storyboard, do nothing.
+    }
 }
 
 @end

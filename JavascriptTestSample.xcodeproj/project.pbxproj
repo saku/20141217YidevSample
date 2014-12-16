@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3036A8201A40F18200F0A57F /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3036A81F1A40F18200F0A57F /* SelectViewController.m */; };
+		3036A8231A40F2D100F0A57F /* SimpleJavascriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3036A8221A40F2D100F0A57F /* SimpleJavascriptViewController.m */; };
+		3036A8261A40F2DC00F0A57F /* HandlebarsSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3036A8251A40F2DC00F0A57F /* HandlebarsSampleViewController.m */; };
+		3036A8291A40F60900F0A57F /* www in Resources */ = {isa = PBXBuildFile; fileRef = 3036A8271A40F60900F0A57F /* www */; };
 		304E9FB61A40E99900AA17F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304E9FB51A40E99900AA17F0 /* main.m */; };
 		304E9FB91A40E99900AA17F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304E9FB81A40E99900AA17F0 /* AppDelegate.m */; };
 		304E9FBF1A40E99900AA17F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304E9FBD1A40E99900AA17F0 /* Main.storyboard */; };
@@ -29,6 +32,12 @@
 /* Begin PBXFileReference section */
 		3036A81E1A40F18200F0A57F /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		3036A81F1A40F18200F0A57F /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		3036A8211A40F2D100F0A57F /* SimpleJavascriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleJavascriptViewController.h; sourceTree = "<group>"; };
+		3036A8221A40F2D100F0A57F /* SimpleJavascriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleJavascriptViewController.m; sourceTree = "<group>"; };
+		3036A8241A40F2DC00F0A57F /* HandlebarsSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlebarsSampleViewController.h; sourceTree = "<group>"; };
+		3036A8251A40F2DC00F0A57F /* HandlebarsSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlebarsSampleViewController.m; sourceTree = "<group>"; };
+		3036A8271A40F60900F0A57F /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		3036A8281A40F60900F0A57F /* www_resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www_resources; sourceTree = "<group>"; };
 		304E9FB01A40E99900AA17F0 /* JavascriptTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavascriptTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304E9FB41A40E99900AA17F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		304E9FB51A40E99900AA17F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,7 +94,13 @@
 				304E9FB81A40E99900AA17F0 /* AppDelegate.m */,
 				3036A81E1A40F18200F0A57F /* SelectViewController.h */,
 				3036A81F1A40F18200F0A57F /* SelectViewController.m */,
+				3036A8211A40F2D100F0A57F /* SimpleJavascriptViewController.h */,
+				3036A8221A40F2D100F0A57F /* SimpleJavascriptViewController.m */,
+				3036A8241A40F2DC00F0A57F /* HandlebarsSampleViewController.h */,
+				3036A8251A40F2DC00F0A57F /* HandlebarsSampleViewController.m */,
 				304E9FBD1A40E99900AA17F0 /* Main.storyboard */,
+				3036A8271A40F60900F0A57F /* www */,
+				3036A8281A40F60900F0A57F /* www_resources */,
 				304E9FC01A40E99900AA17F0 /* Images.xcassets */,
 				304E9FC21A40E99900AA17F0 /* LaunchScreen.xib */,
 				304E9FB31A40E99900AA17F0 /* Supporting Files */,
@@ -199,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3036A8291A40F60900F0A57F /* www in Resources */,
 				304E9FBF1A40E99900AA17F0 /* Main.storyboard in Resources */,
 				304E9FC41A40E99900AA17F0 /* LaunchScreen.xib in Resources */,
 				304E9FC11A40E99900AA17F0 /* Images.xcassets in Resources */,
@@ -221,6 +237,8 @@
 			files = (
 				3036A8201A40F18200F0A57F /* SelectViewController.m in Sources */,
 				304E9FB91A40E99900AA17F0 /* AppDelegate.m in Sources */,
+				3036A8261A40F2DC00F0A57F /* HandlebarsSampleViewController.m in Sources */,
+				3036A8231A40F2D100F0A57F /* SimpleJavascriptViewController.m in Sources */,
 				304E9FB61A40E99900AA17F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
