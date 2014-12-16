@@ -52,18 +52,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kfy-In-EiF">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-hu-jub">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Kfy-In-EiF" firstAttribute="top" secondItem="4Nw-zZ-514" secondAttribute="bottom" id="I3q-i6-gSk"/>
-                            <constraint firstAttribute="bottom" secondItem="Kfy-In-EiF" secondAttribute="bottom" id="cml-DE-Kdx"/>
-                            <constraint firstItem="Kfy-In-EiF" firstAttribute="leading" secondItem="fbh-Pi-ULd" secondAttribute="leading" id="qMW-50-6b9"/>
-                            <constraint firstAttribute="trailing" secondItem="Kfy-In-EiF" secondAttribute="trailing" id="s8P-o5-rsG"/>
+                            <constraint firstAttribute="trailing" secondItem="4kz-hu-jub" secondAttribute="trailing" id="FO6-2W-Ab9"/>
+                            <constraint firstAttribute="bottom" secondItem="4kz-hu-jub" secondAttribute="bottom" id="GP9-Kd-73v"/>
+                            <constraint firstItem="4kz-hu-jub" firstAttribute="top" secondItem="fbh-Pi-ULd" secondAttribute="top" id="VBS-dQ-GtB"/>
+                            <constraint firstItem="4kz-hu-jub" firstAttribute="leading" secondItem="fbh-Pi-ULd" secondAttribute="leading" id="kQi-GG-hXX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="4kz-hu-jub" id="10v-D4-tdA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoV-xA-NHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,18 +85,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7W-9X-Qjq">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpx-tI-LNX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="K7W-9X-Qjq" secondAttribute="bottom" id="W3s-2r-0oA"/>
-                            <constraint firstAttribute="trailing" secondItem="K7W-9X-Qjq" secondAttribute="trailing" id="WNh-JK-9a1"/>
-                            <constraint firstItem="K7W-9X-Qjq" firstAttribute="leading" secondItem="RPU-sS-VKa" secondAttribute="leading" id="gPP-c8-qNv"/>
-                            <constraint firstItem="K7W-9X-Qjq" firstAttribute="top" secondItem="d2d-Ha-vE3" secondAttribute="bottom" id="rmO-1Z-K0H"/>
+                            <constraint firstItem="hpx-tI-LNX" firstAttribute="top" secondItem="RPU-sS-VKa" secondAttribute="top" id="WBP-nu-K7w"/>
+                            <constraint firstItem="hpx-tI-LNX" firstAttribute="leading" secondItem="RPU-sS-VKa" secondAttribute="leading" id="X8L-8F-2z7"/>
+                            <constraint firstAttribute="trailing" secondItem="hpx-tI-LNX" secondAttribute="trailing" id="eSC-PV-RW8"/>
+                            <constraint firstAttribute="bottom" secondItem="hpx-tI-LNX" secondAttribute="bottom" id="ldN-Mu-Pw3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="hpx-tI-LNX" id="qiL-Fi-AqV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9V-aT-mwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

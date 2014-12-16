@@ -8,33 +8,52 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <JavaScriptCore/JavaScriptCore.h>
+
+#define EXP_SHORTHAND
+#import <Expecta.h>
 
 @interface JavascriptTestSampleTests : XCTestCase
 
 @end
 
+static JSContext *context;
+
 @implementation JavascriptTestSampleTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    context = [[JSContext alloc] init];
+    
+    NSString *script;
+    script = [NSString stringWithContentsOfFile:
+              [[NSBundle mainBundle] pathForResource:@"simple-script"
+                                              ofType:@"js"
+                                         inDirectory:@"www/js"]
+                                       encoding:NSUTF8StringEncoding
+                                          error:NULL];
+    [context evaluateScript:script];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testgenerateUrlNoParameters {
+    JSValue *value;
+    
+    // no options.
+    value = [context evaluateScript:@"generateUrl('http://example.com', 'hoge');"];
+    expect(value.toString).to.equal(@"http://example.com/hoge/");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testgenerateUrlFull {
+    JSValue *value;
+
+    // no options.
+    value = [context evaluateScript:@"generateUrl('http://example.com', 'hoge', { foo : 'bar', baz : 'zoo' });"];
+    expect(value.toString).to.equal(@"http://example.com/hoge/?foo=bar&baz=zoo");
 }
 
 @end

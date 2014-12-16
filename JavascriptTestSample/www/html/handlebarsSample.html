@@ -3,16 +3,26 @@
     <head>
         <meta charset="utf-8" />
         <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="../js/handlebars-helper"></script>
+        <script type="text/javascript" src="../js/handlebars-2.0.0.min.js"></script>
+        <script type="text/javascript" src="../js/handlebars-helper.js"></script>
+        <script type="text/javascript" src="../templates/template.js"></script>
         <title>Handlebarsサンプル</title>
     </head>
     <body>
-        aaa
         <div id="handlebars"></div>
         <script>
             $(function($){
               var data = {
+              type: 0,
+              contents : [
+                          'a',
+                          'b',
+                          'c',
+                          'd',
+                          'e',
+              ]
               };
+              $('#handlebars').replaceWith(Handlebars.templates.html_template(data));
               });
             </script>
     </body>

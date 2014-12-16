@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="../js/handlebars-helper"></script>
+        <script type="text/javascript" src="../js/simple-script.js"></script>
         <title>javascriptサンプル</title>
     </head>
     <body>
-        aaa
         <script>
             $(function($){
-              var data = {
-              };
+              var url = generateUrl("http://yahoo.co.jp", "hoge", { foo : "bar", baz : "zoo" });
+              alert(url);
+              location.href = url;
               });
             </script>
     </body>

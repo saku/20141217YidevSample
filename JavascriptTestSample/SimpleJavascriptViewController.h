@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 Retty Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SimpleJavascriptViewController : UIViewController
+@interface SimpleJavascriptViewController : BaseViewController
 
 @end

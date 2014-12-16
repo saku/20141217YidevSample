@@ -10,14 +10,14 @@
 
 @interface HandlebarsSampleViewController ()
 
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
-
 @end
 
 @implementation HandlebarsSampleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self.webView loadHTMLString:[self htmlStringWithFileName:@"handlebarsSample"] baseURL:[self baseURL]];
 }
 
 @end

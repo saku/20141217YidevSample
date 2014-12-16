@@ -10,14 +10,14 @@
 
 @interface SimpleJavascriptViewController ()
 
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
-
 @end
 
 @implementation SimpleJavascriptViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.webView loadHTMLString:[self htmlStringWithFileName:@"simpleJavascript"] baseURL:[self baseURL]];
 }
 
 @end
