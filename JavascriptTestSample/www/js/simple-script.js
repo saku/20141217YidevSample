@@ -1,6 +1,6 @@
 function generateUrl(baseUrl, path, parameters) {
     _baseUrl = addSlashIfNeeded(baseUrl);
-    _path = addSlashIfNeeded(path);
+    _path = path;
     _parameters = parameters || {};
 
     var parameterString = constructParameterString(_parameters);

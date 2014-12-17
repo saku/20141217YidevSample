@@ -45,7 +45,7 @@ static JSContext *context;
     
     // no options.
     value = [context evaluateScript:@"generateUrl('http://example.com', 'hoge');"];
-    expect(value.toString).to.equal(@"http://example.com/hoge/");
+    expect(value.toString).to.equal(@"http://example.com/hoge");
 }
 
 - (void)testgenerateUrlFull {
@@ -53,7 +53,7 @@ static JSContext *context;
 
     // no options.
     value = [context evaluateScript:@"generateUrl('http://example.com', 'hoge', { foo : 'bar', baz : 'zoo' });"];
-    expect(value.toString).to.equal(@"http://example.com/hoge/?foo=bar&baz=zoo");
+    expect(value.toString).to.equal(@"http://example.com/hoge?foo=bar&baz=zoo");
 }
 
 @end
