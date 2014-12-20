@@ -18,6 +18,7 @@
 
     self.title = @"Sample Selection";
     _samples = @[
+                 @"BasicJavascript",
                  @"SimpleJavascript",
                  @"HandlebarsSample",
                  ];

@@ -40,6 +40,48 @@
             </objects>
             <point key="canvasLocation" x="-694" y="-166"/>
         </scene>
+        <!--Basic Javascript View Controller-->
+        <scene sceneID="2YH-KU-fnf">
+            <objects>
+                <viewController storyboardIdentifier="BasicJavascriptViewController" id="ram-XM-7P9" customClass="BasicJavascriptViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f07-1W-Ru7"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdC-fd-4Zc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T8O-0G-uVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="わいあいでぶ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enZ-Xk-xmc">
+                                <rect key="frame" x="249" y="190" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZE-zW-lHC">
+                                <rect key="frame" x="279" y="390" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="nZE-zW-lHC" secondAttribute="centerY" constant="-100" id="5bQ-Sk-nXX"/>
+                            <constraint firstAttribute="centerX" secondItem="nZE-zW-lHC" secondAttribute="centerX" id="OTP-iB-XdZ"/>
+                            <constraint firstAttribute="centerX" secondItem="enZ-Xk-xmc" secondAttribute="centerX" id="Xcf-k9-jlP"/>
+                            <constraint firstAttribute="centerY" secondItem="enZ-Xk-xmc" secondAttribute="centerY" constant="100" id="rtw-jl-6n9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sourceLabel" destination="enZ-Xk-xmc" id="ibD-0g-iYL"/>
+                        <outlet property="targetLabel" destination="nZE-zW-lHC" id="7qX-Me-iht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acw-W0-NQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1377" y="564"/>
+        </scene>
         <!--Simple Javascript View Controller-->
         <scene sceneID="Gqq-9Z-LUq">
             <objects>
